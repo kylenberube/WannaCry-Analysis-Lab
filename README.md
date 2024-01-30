@@ -50,3 +50,10 @@ The primary goal of this project is to understand the behavior and functionality
 
    - Captured network traffic while the malware was executing using Wireshark.
    - Analyzed the communication patterns, protocols used, and any identifiable patterns in the network traffic.
+
+## Conclusive Analysis
+The WannaCry malware is classified as ransomware, intially spreading through Microsoft's system EternalBlue
+Once inside the network the WannaCry software moves laterally across the network through the SMB protocol
+WannaCry then encrypts files across the host such as images,documents and databases
+Then a ransomware note displays on the host screen, demaning payment as Bitcoin for the encyption key
+The malicious software also has a killswitch, meaning if the program can/can not reach a specific domain it stops spreading through the network
