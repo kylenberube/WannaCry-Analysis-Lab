@@ -29,24 +29,24 @@ The primary goal of this project is to understand the behavior and functionality
    - FlareVM will be the primary isolated VM worked in, REMnux is used for WireShark analysis in this lab.
 ## Analysis Proccess
 
-### 2. **Static Analysis with PEStudio**
+### **Static Analysis with PEStudio**
 
    - Ran the WannaCry executable through PEStudio to gather information about its imports, exports, resources, and potential indicators of compromise (IOCs).
    - Analyzed the file's structure, libraries, and suspicious characteristics.
    - Note the execuable's header for any suspicous API calls or suspicous hex values
 
-### 3. **Dynamic Analysis with Procmon**
+### **Dynamic Analysis with Procmon**
 
    - Executed the WannaCry executable in a controlled environment with Procmon running to capture system-level events.
    - Monitored file system changes, registry modifications, network connections, and process creation events.
 
-### 4. **Binary Analysis with Ghidra**
+### **Binary Analysis with Ghidra**
 
    - Loaded the WannaCry binary into Ghidra to decompile and analyze the malware's code.
    - Identified key functions, API calls, and potential vulnerabilities in the code.
    - Examined the malware's behavior and functionalities revealed through static analysis.
 
-### 5. **Network Analysis with Wireshark**
+### **Network Analysis with Wireshark**
 
    - Captured network traffic while the malware was executing using Wireshark.
    - Analyzed the communication patterns, protocols used, and any identifiable patterns in the network traffic.
